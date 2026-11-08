@@ -11,8 +11,8 @@ This dataset named SalesData_1000Rows_WithIssues.csv which contains customer ord
                    •	In Date Column check for blank cells and using ETL tool to convert blank rows to null type. Also identified only two rows are blank in date column so convert that column to proper null.
                    •	Customer Name, Region, Category, Product  Columns Setting data types and trim, clean , Proper function has been done. Also convert the blank cells to “Unknown” by using find and replace method.
                    •	On product Column has Blank rows so maintaining data consistency and fill up the blanks, created a calculated column for product based on region.
-                          *Using clustered column chart used to find out region based count of product and fill up the blank rows based on that and rename the Column as product, Remove old product column
-In Power query editor,Formula used:
+                   •     Using clustered column chart used to find out region based count of product and fill up the blank rows based on that and rename the Column as product, Remove old product column
+                          In Power query editor,Formula used:
                   = if [Product] = "Unknown" and [Region] = "East" then "Monitor"
                   else if [Product] = "Unknown" and [Region] = "South" then   "Headphones"
                   else if [Product] = "Unknown" and [Region] = "West" then "Desk Chair"
