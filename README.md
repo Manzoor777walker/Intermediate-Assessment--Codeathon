@@ -34,6 +34,8 @@ This dataset named SalesData_1000Rows_WithIssues.csv which contains customer ord
                                  
 ## Visualizations and Insights
 *Using the cleaned dataset, create meaningful visual representations to analyze order and profit trends*
+
+
        *Pie Chart showing order distribution across different regions
        
        *Column Chart to display the top 5 trending products based on the number of times each product was ordered
@@ -42,12 +44,15 @@ This dataset named SalesData_1000Rows_WithIssues.csv which contains customer ord
        
 ## DAX Calculations
 *Apply DAX to create calculated elements and gain deeper insights*
-                    	Create a Calculated Table named EastRegionOrders that filters and displays only the orders from the East region.
-                              Formula used :EastRegionOrders =FILTER(SalesDatiis,SalesDatiis[Region]="East")
-                    	Create a Calculated Column to compute the difference between the Profit and Cost columns. Name it ProfitCostDifference
-                          Formula used as: ProfitCostDifference = (SalesDatiis[Profit]-SalesDatiis[Cost])
-                    	Create a Calculated Measure to find the total profit earned. Name it TotalProfit
-                          Formula used as:TotalProfit = SUM(SalesDatiis[Profit])
+
+                           	Create a Calculated Table named EastRegionOrders that filters and displays only the orders from the East region.
+                                       Formula used :EastRegionOrders =FILTER(SalesDatiis,SalesDatiis[Region]="East")
+                                       
+                           	Create a Calculated Column to compute the difference between the Profit and Cost columns. Name it ProfitCostDifference
+                                       Formula used as: ProfitCostDifference = (SalesDatiis[Profit]-SalesDatiis[Cost])
+                                       
+                           	Create a Calculated Measure to find the total profit earned. Name it TotalProfit
+                                        Formula used as:TotalProfit = SUM(SalesDatiis[Profit])
                                                  
 
 
